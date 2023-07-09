@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { environment } from 'src/environments/environment';
 import { Comment } from 'src/app/Comment';
 import { Response } from 'src/app/Response';
 
@@ -11,7 +10,7 @@ import { Response } from 'src/app/Response';
 })
 export class CommentService {
   private baseApiUrl ='http://localhost:3333/';
-  private apiUrl = 'http://localhost:3333/';
+  private apiUrl = `${this.baseApiUrl}api/moments`;;
 
   constructor(private http: HttpClient) {}
 

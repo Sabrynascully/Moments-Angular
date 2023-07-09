@@ -15,7 +15,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Moment } from 'src/app/Moments';
 import { Comment } from 'src/app/Comment';
 
-import { environment } from 'src/environments/environment';
 import { Router } from '@angular/router';
 
 import { faTimes, faEdit } from '@fortawesome/free-solid-svg-icons';
